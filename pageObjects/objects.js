@@ -57,7 +57,7 @@ module.exports = {
                 .click('@xPop')
                 .waitForElementVisible('@logo')
                 .setValue('@srchBar', 'Home Entertainment System')
-                .pause(5000)
+                .pause(2000)
                 .click('@srchBtn')
                 .expect.element('@resultsPage').text.to.contain('home entertainment system')
             this
@@ -82,7 +82,7 @@ module.exports = {
                 .click('@logo')
                 .waitForElementVisible('@srchBar')
                 .setValue('@srchBar', 'Tv')
-                .pause(5000)
+                .pause(2000)
                 .click('@srchBtn')
                 .waitForElementVisible('@logo')
                 .expect.element('@resultsPage').text.to.contain('tv')
